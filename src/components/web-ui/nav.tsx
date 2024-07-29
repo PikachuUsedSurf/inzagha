@@ -3,7 +3,7 @@ import { FaLeaf } from "react-icons/fa";
 
 export default function Navbar() {
     return (
-        <header className="px-4 lg:px-6 h-14 flex items-center">
+        <header className="px-4 lg:px-6 h-14 flex items-center justify-between">
                 <Link
                 href="#"
                 className="flex items-center justify-center"
@@ -11,15 +11,14 @@ export default function Navbar() {
                 <FaLeaf className="h-6 w-6" />
                 <span className="sr-only">iNZAGHA FARM</span>
                 </Link>
-                <nav>
+                <nav className="flex gap-4">
                     {NavbarList.map((item) => (
                         <div key={item.name}>
-                            <Link href={item.url}>
+                            <Link href={item.url} className="hover:text-slate-600">
                                 {item.name}
                             </Link>
                         </div>
                     ))
-
                     }
                 </nav>
         </header>
