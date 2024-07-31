@@ -7,7 +7,7 @@ export default function About() {
                         <h1>About Us</h1>
                         <h2 className=" text-4xl sm:text-4xl md:text-5xl tracking-tighter font-bold">Our Farm's Story</h2>
                         {aboutList.map((item) => (
-                            <p className=" text-muted-foreground">{item.story}</p>
+                            <p className=" text-muted-foreground text-xl">{item.story}</p>
                         ))}
                     </div>
                     <img src="/placeholder.svg"
