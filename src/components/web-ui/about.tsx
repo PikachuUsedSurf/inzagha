@@ -5,7 +5,7 @@ export default function About() {
                 <div className="grid grid-cols-2 gap-6 lg:gap-12">
                     <div className="space-y-4">
                         <h1>About Us</h1>
-                        <h2 className=" text-4xl sm:text-4xl md:text-5xl tracking-tighter font-bold">Our Farm Story</h2>
+                        <h2 className="text-4xl sm:text-4xl md:text-5xl tracking-tighter font-bold">Our Farm Story</h2>
                         {aboutList.map((item) => (
                             <p className=" text-muted-foreground text-xl" key={item.story}>{item.story}</p>
                         ))}
