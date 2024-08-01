@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export default function About() {
     return(
         <section id="about" className="w-full py-12 md:py-24 lg:py-24 bg-muted">
@@ -10,7 +12,7 @@ export default function About() {
                             <p className=" text-muted-foreground text-xl" key={item.story}>{item.story}</p>
                         ))}
                     </div>
-                    <img src="/placeholder.svg"
+                    <Image src="/placeholder.svg"
                          alt="people"
                          height={310}
                          width={550}
@@ -24,6 +26,7 @@ export default function About() {
 
 
 const aboutList = [
+
     {
         story: "iNZAGHA Farm was founded in 2024 by Maulid Banyani and Hawa Mkwela, who believed in the importance of sustainable, organic farming practices. Over the years, we've grown to become one of the leading producers of high-quality fruits and vegetables in the region."
     },

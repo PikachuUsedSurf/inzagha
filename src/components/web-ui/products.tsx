@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export default function Productssection() {
     return(
         <section className="w-full py-12 md:py-24 lg:py-32">
@@ -16,7 +18,7 @@ export default function Productssection() {
                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-6">
                 {productList.map((item) => (
                     <div key={item.name} className="flex flex-col items-center space-y-2">
-                    <img src={item.src || "/placeholder.svg"}
+                    <Image src={item.src || "/placeholder.svg"}
                             alt={item.alt || item.name}
                             height={item.height || 300}
                             width={item.width || 300}
