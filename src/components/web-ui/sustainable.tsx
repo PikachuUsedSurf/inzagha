@@ -8,7 +8,7 @@ export default function Practices(){
                 <div className="space-y-6">
                     <div className="space-y-2 text-center">
                         <h1 className="text-4xl font-bold tracking-tighter">Sustainable Farming Practicies</h1>
-                        <p className="text-muted-foreground md:text-xl">At iNZAGHA Farm, we're committed to sustainable and ethical farming methods that prioritize the health of our land, animals, and community.</p>
+                        <p className="text-muted-foreground md:text-xl">At iNZAGHA Farm, we&apos;re committed to sustainable and ethical farming methods that prioritize the health of our land, animals, and community.</p>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         {PracticesList.map((item) => {
