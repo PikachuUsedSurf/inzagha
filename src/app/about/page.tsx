@@ -27,9 +27,24 @@ export default function AboutUs(){
                     </div>
                 </section>
             ))}
-            <section>
-                <div>
-                    
+            <section className="py-16 px-4 md:px-8 lg:px-12 bg-muted">
+                <div className="max-w-5xl mx-auto">
+                    <h1 className="text-3xl font-bold mb-8">Meet The Team</h1>
+                    <div className="grid grid-grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-36">
+                        {TeamList.map((item) => (
+                                    <div key={item.name} className="flex flex-col items-center">
+                                        <Image 
+                                        src={item.src}
+                                        width={item.Weight}
+                                        height={item.height}
+                                        alt={item.alt}
+                                        className="rounded-full mb-4"
+                                        />
+                                        <h1 className="text-xl font-bold mb-2">{item.name}</h1>
+                                        <p className="text-muted-foreground">{item.title}</p>
+                                    </div>
+                        ))}
+                        </div>
                 </div>
             </section>
         </div>
@@ -57,11 +72,16 @@ const TeamList = [
         name: "Maulidi Banyani",
         title: "Owner",
         src: "/placeholder.svg",
+        alt: "ceo",
         Weight: 500,
         height: 500,
     },
     {
         name: "Hawa Mkwela",
-        title: "Owner"
+        title: "Owner",
+        src: "/placeholder.svg",
+        alt: "ceo",
+        Weight: 500,
+        height: 500,
     },
 ]
