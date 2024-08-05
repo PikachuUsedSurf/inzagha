@@ -32,7 +32,7 @@ const NavbarList = [
     },
     {
         name: 'products',
-        url: '/products'
+        url: '/product'
     },
     {
         name: 'contact us',
