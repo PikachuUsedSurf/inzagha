@@ -9,7 +9,7 @@ export default function Contact() {
                 <div className="container">
                     <div className="space-y-2">
                         <h1>Get In Touch</h1>
-                        <p>We're here to help. Fill out the form below or give us a call and we'll get back to you as soon as possible.</p>
+                        <p>We are here to help. Fill out the form below or give us a call and we will get back to you as soon as possible.</p>
                     </div>
                     <div>
                         <div>

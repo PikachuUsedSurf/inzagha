@@ -148,21 +148,7 @@ export default function Products() {
               <h1 className="text-2xl font-bold tracking-tight">Livestock for Sale</h1>
               <p className="text-muted-foreground">Browse our selection of high-quality livestock.</p>
             </div>
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="outline" className="ml-auto shrink-0">
-                  <ArrowUpDownIcon className="w-4 h-4 mr-2" />
-                  Sort by
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-[200px]" align="end">
-                <DropdownMenuRadioGroup value={sort} onValueChange={setSort}>
-                  <DropdownMenuRadioItem value="featured">Featured</DropdownMenuRadioItem>
-                  <DropdownMenuRadioItem value="low">Price: Low to High</DropdownMenuRadioItem>
-                  <DropdownMenuRadioItem value="high">Price: High to Low</DropdownMenuRadioItem>
-                </DropdownMenuRadioGroup>
-              </DropdownMenuContent>
-            </DropdownMenu>
+
           </div>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {filteredProducts.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage).map((product) => (
