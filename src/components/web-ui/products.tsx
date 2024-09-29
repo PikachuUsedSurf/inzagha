@@ -6,13 +6,13 @@ export default function Productssection() {
             <div className="container px-4 md:px-6">
                <div className="space-y-6">
                     <div className="space-y-2 text-center">
-                    <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Fresh Products</h2>
+                    <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Products & Services</h2>
                     <p className="
                         mx-auto
                         text-xl
                         text-muted-foreground
                         w-[650px]
-                    ">Explore our selection of seasonal, organic fruits and vegetables, grown with care on our family farm.</p>
+                    "></p>
                     </div>
                </div>
                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-6">
@@ -53,7 +53,31 @@ const productList = [
         width: 300,
     },
     {
-        name: "Ducks",
+        name: "Poultry",
+        description: "Poultry products",
+        src: "/placeholder.svg",
+        alt: "poultry",
+        height: 300,
+        width: 300,
+    },
+    {
+        name: "Crops",
+        description: "Crops products",
+        src: "/placeholder.svg",
+        alt: "crops",
+        height: 300,
+        width: 300,
+    },
+    {
+        name: "Organic Fertilizers",
+        description: "We do production and packaging",
+        src: "/placeholder.svg",
+        alt: "ducks",
+        height: 300,
+        width: 300,
+    },
+    {
+        name: "Animal Feed",
         description: "meaty ducks yummy",
         src: "/placeholder.svg",
         alt: "ducks",

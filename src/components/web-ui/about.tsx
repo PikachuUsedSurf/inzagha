@@ -28,10 +28,10 @@ export default function About() {
 const aboutList = [
 
     {
-        story: "iNZAGHA Farm was founded in 2024 by Maulidi Banyani and Hawa Mkwela, who believed in the importance of sustainable, organic farming practices. Over the years, we've grown to become one of the leading producers of high-quality fruits and vegetables in the region."
+        story: "iNZAGHA Farm was founded in 2024 by the (founders*), who believed in the importance of sustainable, organic farming practices. We aspire to grow and become one of the leading producers of high-quality livestock, poultry and animal feed in the region."
     },
     {   
 
-        story: "Our mission is to provide our community with the freshest, most nutritious produce while also protecting the environment. We're committed to using eco-friendly methods and supporting local businesses."
+        story: "Our mission is to provide quality and affordable organic products to the markets."
     },
 ]

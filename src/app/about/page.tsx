@@ -14,7 +14,7 @@ export default function AboutUs(){
                 />
                 <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white gap-4">
                     <h1 className="text-4xl font-bold">Welcome To Our Farm</h1>
-                    <p className="text-lg font-semibold max-w-3xl text-center">We are a family-owned farm dedicated to sustainable and ethical agriculture, providing high-quality produce to our local community.</p>
+                    <p className="text-lg font-semibold max-w-3xl text-center">We are a family-owned farm dedicated to sustainable and ethical agriculture, providing high-quality produce.</p>
                 </div>
             </section>
             {AboutList.map((item, index) => (
@@ -27,10 +27,42 @@ export default function AboutUs(){
                     </div>
                 </section>
             ))}
-            <section className="py-16 px-4 md:px-8 lg:px-12 bg-muted">
+            <section className="py-16 px-4 md:px-8 lg:px-12">
                 <div className="max-w-5xl mx-auto">
-                    <h1 className="text-3xl font-bold mb-8">Meet The Team</h1>
+                    <h1 className="text-3xl font-bold mb-8">Board of Directors</h1>
                     <div className="grid grid-grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-36">
+                        {TeamList.map((item) => (
+                                    <div key={item.name} className="flex flex-col items-center">
+                                        <Image 
+                                        src={item.src}
+                                        width={item.Weight}
+                                        height={item.height}
+                                        alt={item.alt}
+                                        className="rounded-full mb-4"
+                                        />
+                                        <h1 className="text-xl font-bold mb-2">{item.name}</h1>
+                                        <p className="text-muted-foreground">{item.title}</p>
+                                    </div>
+                        ))}
+                        </div>
+                        <h1 className="text-3xl font-bold mb-8">Management Team</h1>
+                        <div className="grid grid-grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-36">
+                        {TeamList.map((item) => (
+                                    <div key={item.name} className="flex flex-col items-center">
+                                        <Image 
+                                        src={item.src}
+                                        width={item.Weight}
+                                        height={item.height}
+                                        alt={item.alt}
+                                        className="rounded-full mb-4"
+                                        />
+                                        <h1 className="text-xl font-bold mb-2">{item.name}</h1>
+                                        <p className="text-muted-foreground">{item.title}</p>
+                                    </div>
+                        ))}
+                        </div>
+                        <h1 className="text-3xl font-bold mb-8">Departments of...</h1>
+                        <div className="grid grid-grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-36">
                         {TeamList.map((item) => (
                                     <div key={item.name} className="flex flex-col items-center">
                                         <Image 
@@ -55,6 +87,10 @@ const AboutList = [
     {
         title: "Our History",
         description: "Our farm has been in the family for over 50 years, passed down through generations. We take great pride in our rich history and the hard work that has gone into building this farm. From humble beginnings, we've grown to become a respected source of high-quality produce in our local community.",
+    },
+    {
+        title: 'Our Vision',
+        description: 'To become innovative and reliable breeding and farming center for variaties of products in the local and international markets'
     },
     {
         title: "Our Mission",
