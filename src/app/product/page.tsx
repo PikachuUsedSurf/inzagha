@@ -33,37 +33,23 @@ const products = [
 
 const categories = ['All', 'Livestock', 'Poultry', 'Animal Feed', 'Fertilizer']
 
+const addToCart = (product: { id?: number; name: any; price?: number; category?: string; image?: string }) => {
 
+  console.log(`${product.name} has been added to the cart.`);
+
+};
 
 export default function Products(){
-const [cart, setCart] = useState({})
 const [selectedCategory, setSelectedCategory] = useState('All')
 const [priceRange, setPriceRange] = useState([0, 2000000])
 const [searchTerm, setSearchTerm] = useState('')
 
-const addToCart = (product) => {
-  setCart((prevCart) => ({
-    ...prevCart,
-    [product.id]: (prevCart[product.id] || 0) + 1,
-  }))
-  toast({
-    title: "Added to cart",
-    description: `1 ${product.name} added to your cart.`,
-  })
-}
 
 const filteredProducts = products.filter((product) => 
 (selectedCategory === 'All' || product.category === selectedCategory) &&
 (product.price >= priceRange[0] && product.price <= priceRange[1]) &&
 product.name.toLowerCase().includes(searchTerm.toLowerCase())
 )
-
-const getTotalItems = () => Object.values(cart).reduce((a, b) => a + b, 0)
-
-const getTotalPrice = () => Object.entries(cart).reduce((total, [ProductsId, quantity]) =>{
-  const product = products.find(p =>p.id === parseInt(ProductsId))
-  return total = (product.price * quantity )
-}, 0)
 
   return(
     <div>
