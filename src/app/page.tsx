@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <main className="flex-1">
        <Topsection />
-       <About />
+       {/* <About /> */}
        <Productssection />
        <Practices />
       </main>
