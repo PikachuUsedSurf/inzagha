@@ -13,7 +13,7 @@ export default function Contact() {
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter mb-4">Contact Us</h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              We're here to help and answer any question you might have. We look forward to hearing from you.
+              We&apos;re here to help and answer any question you might have. We look forward to hearing from you.
             </p>
           </div>
           
