@@ -14,7 +14,7 @@ const productList: Product[] = [
   {
     name: "Cows",
     description: "Premium quality beef from grass-fed cows",
-    src: "/placeholder.svg",
+    src: "/cow-product.jpg",
     alt: "Cow grazing in a lush green field",
     height: 300,
     width: 300,
@@ -22,7 +22,7 @@ const productList: Product[] = [
   {
     name: "Goat",
     description: "Lean and flavorful goat meat from free-range animals",
-    src: "/placeholder.svg",
+    src: "/goat-product.jpg",
     alt: "Mountain goat standing on a rocky outcrop",
     height: 300,
     width: 300,
@@ -30,7 +30,7 @@ const productList: Product[] = [
   {
     name: "Poultry",
     description: "Fresh, organic poultry products from our farm",
-    src: "/placeholder.svg",
+    src: "/Poultry-product.jpg",
     alt: "Free-range chickens in a barnyard",
     height: 300,
     width: 300,
@@ -38,7 +38,7 @@ const productList: Product[] = [
   {
     name: "Crops",
     description: "Sustainably grown crops and fresh produce",
-    src: "/placeholder.svg",
+    src: "/crops-product.jpg",
     alt: "Lush field of various crops",
     height: 300,
     width: 300,
@@ -46,7 +46,7 @@ const productList: Product[] = [
   {
     name: "Organic Fertilizers",
     description: "Eco-friendly fertilizers for optimal plant growth",
-    src: "/placeholder.svg",
+    src: "/fertilizer-product.jpg",
     alt: "Bags of organic fertilizer in a greenhouse",
     height: 300,
     width: 300,
@@ -54,7 +54,7 @@ const productList: Product[] = [
   {
     name: "Animal Feed",
     description: "Nutritious and balanced feed for livestock",
-    src: "/placeholder.svg",
+    src: "/animalfeed-product.jpg",
     alt: "Various types of animal feed in storage",
     height: 300,
     width: 300,

@@ -69,7 +69,7 @@ export default function AboutUs() {
     <div className="flex flex-col min-h-screen">
       <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center">
         <Image 
-          src="/placeholder.svg"
+          src="/farm.jpg"
           alt="Panoramic view of our farm"
           layout="fill"
           objectFit="cover"
