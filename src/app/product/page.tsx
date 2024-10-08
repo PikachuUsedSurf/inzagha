@@ -176,7 +176,7 @@ export default function Products() {
                   />
                   <Select
                     value={selectedSubcategories[category]}
-                    onValueChange={(value) => {
+                    onValueChange={(value: any) => {
                       setSelectedSubcategories(prev => ({ ...prev, [category]: value }));
                       setSelectedSubsubcategories(prev => ({ ...prev, [category]: 'All' }));
                     }}
@@ -195,7 +195,7 @@ export default function Products() {
                   {selectedSubcategories[category] !== 'All' && (
                     <Select
                       value={selectedSubsubcategories[category]}
-                      onValueChange={(value) => setSelectedSubsubcategories(prev => ({ ...prev, [category]: value }))}
+                      onValueChange={(value: any) => setSelectedSubsubcategories(prev => ({ ...prev, [category]: value }))}
                     >
                       <SelectTrigger className="w-[180px]">
                         <SelectValue placeholder="Select sub-subcategory" />
@@ -218,7 +218,7 @@ export default function Products() {
                     max={2000000}
                     step={1000}
                     value={priceRanges[category]}
-                    onValueChange={(value) => setPriceRanges(prev => ({ ...prev, [category]: value as [number, number] }))}
+                    onValueChange={(value: [number, number]) => setPriceRanges(prev => ({ ...prev, [category]: value as [number, number] }))}
                     className="w-full md:w-96"
                   />
                 </div>
