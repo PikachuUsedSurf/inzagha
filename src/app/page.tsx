@@ -2,15 +2,14 @@ import Topsection from "@/components/web-ui/topsection";
 import About from "@/components/web-ui/about"
 import Productssection from "@/components/web-ui/products";
 import Practices from "@/components/web-ui/sustainable";
-import Footer from "@/components/web-ui/footer";
-import Image from "next/image";
+import React from "react";
 
 export default function Home() {
   return (
     <>
       <main className="flex-1">
        <Topsection />
-       <About />
+       {/* <About /> */}
        <Productssection />
        <Practices />
       </main>
